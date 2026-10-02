@@ -147,6 +147,14 @@ export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 export EDITOR=nvim
 export VISUAL=nvim
 
+# uv (Python package manager)
+[ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
+
+# nvm (Node version manager)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
 
 #==============================================================================
 # 8. FUNCTIONS
@@ -185,5 +193,3 @@ ogr() {
   fi
 }
 
-
-. "$HOME/.local/bin/env"
